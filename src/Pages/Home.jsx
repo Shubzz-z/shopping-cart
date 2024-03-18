@@ -24,7 +24,7 @@ function Home() {
   },[])
 
   return (
-    <div className='max-w-6xl grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 pt-12 p-4'>
+    <div className='max-w-6xl grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 pt-12 p-6'>
       {loading?(<Spinner/>):(
         items.length>0?(
           items.map((item)=>(<Product key={item.id} item={item}/>))
